@@ -15,9 +15,9 @@ type Factory struct {
 	creator ProductManager
 }
 
-func (factory *Factory) Create(owner string) Product {
-	product := factory.creator.CreateProduct(owner)
-	factory.creator.RegisterProduct(product)
+func (f *Factory) Create(owner string) Product {
+	product := f.creator.CreateProduct(owner)
+	f.creator.RegisterProduct(product)
 	return product
 }
 
@@ -33,7 +33,7 @@ func (id *IDCard) GetOwner() string {
 	return id.owner
 }
 
-func (id *IDCard) ToString() {
+func (id *IDCard) String() {
 	fmt.Println("IDCard: " + id.owner)
 }
 
@@ -43,15 +43,15 @@ func NewIDCard(owner string) *IDCard {
 
 type IDCardFactory struct{}
 
-func (f *IDCardFactory) CreateProduct(owner string) Product {
+func (cf *IDCardFactory) CreateProduct(owner string) Product {
 	return NewIDCard(owner)
 }
 
-func (f *IDCardFactory) RegisterProduct(product Product) {
+func (cf *IDCardFactory) RegisterProduct(product Product) {
 	fmt.Println("Productを登録しました。")
 }
 
-func execFactoryMethod() {
+func ExecFactoryMethod() {
 	factory := &Factory{creator: &IDCardFactory{}}
 	card1 := factory.Create("山田太郎")
 	card2 := factory.Create("鈴木花子")

@@ -1,8 +1,8 @@
 package main
 
 func main() {
-	//execIterator()
-	//execAdaptor()
-	//execTemplateMethod()
-	execFactoryMethod()
+	//ExecIterator()
+	//ExecAdaptor()
+	//ExecTemplateMethod()
+	ExecFactoryMethod()
 }
