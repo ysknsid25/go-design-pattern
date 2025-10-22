@@ -5,5 +5,6 @@ func main() {
 	//ExecAdaptor()
 	//ExecTemplateMethod()
 	//ExecFactoryMethod()
-	ExecSingleton()
+	//ExecSingleton()
+	ExecBuilder()
 }
