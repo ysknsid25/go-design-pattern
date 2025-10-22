@@ -6,5 +6,6 @@ func main() {
 	//ExecTemplateMethod()
 	//ExecFactoryMethod()
 	//ExecSingleton()
-	ExecBuilder()
+	//ExecBuilder()
+	ExecComposite()
 }
