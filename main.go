@@ -7,5 +7,6 @@ func main() {
 	//ExecFactoryMethod()
 	//ExecSingleton()
 	//ExecBuilder()
-	ExecComposite()
+	//ExecComposite()
+	ExecFunctionalOptions()
 }
