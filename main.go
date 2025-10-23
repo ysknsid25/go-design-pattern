@@ -10,5 +10,6 @@ func main() {
 	//ExecComposite()
 	//ExecFunctionalOptions()
 	//ExecObserver()
-	ExecMemento()
+	//ExecMemento()
+	ExecCommand()
 }
