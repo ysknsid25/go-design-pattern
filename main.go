@@ -8,5 +8,6 @@ func main() {
 	//ExecSingleton()
 	//ExecBuilder()
 	//ExecComposite()
-	ExecFunctionalOptions()
+	//ExecFunctionalOptions()
+	ExecObserver()
 }
