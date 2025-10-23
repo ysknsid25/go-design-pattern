@@ -9,5 +9,6 @@ func main() {
 	//ExecBuilder()
 	//ExecComposite()
 	//ExecFunctionalOptions()
-	ExecObserver()
+	//ExecObserver()
+	ExecMemento()
 }
